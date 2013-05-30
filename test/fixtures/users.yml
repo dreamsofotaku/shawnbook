@@ -3,3 +3,9 @@ taylorjones:
   last_name: "Jones"
   email: "tjones@inner-dimensional.com"
   profile_name: "taylorjones"
+
+prince:
+  first_name: "Shawn"
+  last_name: "Hurd"
+  email: "prince2@inner-dimensional.com"
+  profile_name: "prince2"
