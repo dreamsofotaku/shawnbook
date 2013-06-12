@@ -44,9 +44,18 @@ GEM
       orm_adapter (~> 0.1)
       railties (~> 3.1)
       warden (~> 1.2.1)
+    draper (1.2.1)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      request_store (~> 1.0.3)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    factory_girl (4.2.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.2.1)
+      factory_girl (~> 4.2.0)
+      railties (>= 3.0.0)
     hike (1.2.2)
     i18n (0.6.1)
     journey (1.0.4)
@@ -87,6 +96,7 @@ GEM
     rake (10.0.4)
     rdoc (3.12.2)
       json (~> 1.4)
+    request_store (1.0.5)
     sass (3.2.9)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -108,6 +118,7 @@ GEM
       tilt (~> 1.1, != 1.3.0)
     sqlite3 (1.3.7)
     sqlite3 (1.3.7-x86-mingw32)
+    state_machine (1.2.0)
     thor (0.18.1)
     tilt (1.4.1)
     treetop (1.4.12)
@@ -126,6 +137,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
+  draper
+  factory_girl_rails
   jquery-rails
   pg
   rails (= 3.2.13)
@@ -133,4 +146,5 @@ DEPENDENCIES
   shoulda
   simple_form
   sqlite3
+  state_machine
   uglifier (>= 1.0.3)

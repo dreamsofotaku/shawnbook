@@ -3,6 +3,7 @@ taylorjones:
   last_name: "Jones"
   email: "prince@inner-dimensional.com"
   profile_name: "taylorjones"
+  encrypted_password: $2a$10$Fh/Hm8RxDsuPTeBUr6864.GARlcmt7zF2WspaXGr3BIv2C27N.osq
 
 prince:
   first_name: "Shawn"

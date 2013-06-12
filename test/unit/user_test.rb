@@ -57,8 +57,12 @@ require 'test_helper'
 	end
 
 	test "that creating friends on a user works" do
-		users(:taylorjones).friends << users(:mikethefrog)
-		users(:taylorjones).friends.reload
-		assert users(:taylorjones).friends.include?(users(:mikethefrog))
+		users(:taylorjones).pending_friends << users(:mikethefrog)
+		users(:taylorjones).pending_friends.reload
+		assert users(:taylorjones).pending_friends.include?(users(:mikethefrog))
+	end
+
+	test "that calling to_param on a user returns the profile_name" do
+		assert_equal "taylorjones", users(:taylorjones).to_param
 	end
 end

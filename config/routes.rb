@@ -1,21 +1,31 @@
 Shawnbook::Application.routes.draw do
   get "profiles/show"
 
-  devise_for :users
-
-  devise_scope :user do
-    get 'register', to: 'devise/registrations#new', as: :register
-    get 'login', to: 'devise/sessions#new', as: :login
-    get 'logout', to: 'devise/sessions#destroy', as: :logout
+  as :user do
+    get '/register', to: 'devise/registrations#new', as: :register
+    get '/login', to: 'devise/sessions#new', as: :login
+    get '/logout', to: 'devise/sessions#destroy', as: :logout
   end
 
-  resources :user_friendships
+  devise_for :users, skip: [:sessions]
+
+  as :user do
+    get "/login" => 'devise/sessions#new', as: :new_user_session
+    post "/login" => 'devise/sessions#create', as: :user_session
+    delete "/login" => 'devise/sessions#destroy', as: :destroy_user_session
+  end
+
+  resources :user_friendships do
+    member do
+      put :accept
+    end
+  end
 
   resources :statuses
   get 'feed', to: 'statuses#index', as: :feed
   root to: 'statuses#index'
 
-  get '/:id', to: 'profiles#show'
+  get '/:id', to: 'profiles#show', as: 'profile'
 
 
   # The priority is based upon order of creation:
