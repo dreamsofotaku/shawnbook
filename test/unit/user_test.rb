@@ -4,6 +4,12 @@ require 'test_helper'
 
 		should have_many(:user_friendships)
 		should have_many(:friends)
+		should have_many(:pending_user_friendships)
+		should have_many(:pending_friends)
+		should have_many(:requested_user_friendships)
+		should have_many(:requested_friends)
+		should have_many(:blocked_user_friendships)
+		should have_many(:blocked_friends)
 
 		test "A user should enter a first name" do
 		user =  User.new
