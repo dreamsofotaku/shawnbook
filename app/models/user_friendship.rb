@@ -16,6 +16,7 @@ class UserFriendship < ActiveRecord::Base
 		event :accept do
 			transition any => :accepted
 		end
+		
 		event :block do
 			transition any => :blocked
 		end

@@ -3,9 +3,10 @@
 </div>
 
 <div>
+	<strong>Friend list</strong>
 	<%= link_to 'Blocked', user_friendships_path(list:'blocked') %>
 	<%= link_to 'Pending', user_friendships_path(list:'pending') %>
-	<%= link_to 'Accepted', user_friendships_path(list:'accepted') %>
+	<%= link_to 'Accepted', user_friendships_path(list: 'accepted') %>
 	<%= link_to 'Requested', user_friendships_path(list:'requested') %>
 </div>
 
