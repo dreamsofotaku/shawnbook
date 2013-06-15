@@ -293,47 +293,47 @@ a:focus {
 }
 
 .span12 {
-  width: 940px;
+  width: 100%;
 }
 
 .span11 {
-  width: 860px;
+  width: 91.48936170212766%;
 }
 
 .span10 {
-  width: 780px;
+  width: 82.97872340425532%;
 }
 
 .span9 {
-  width: 700px;
+  width: 74.46808510638298%;
 }
 
 .span8 {
-  width: 620px;
+  width: 65.95744680851064%;
 }
 
 .span7 {
-  width: 540px;
+  width: 57.4468085106383%;
 }
 
 .span6 {
-  width: 460px;
+  width: 48.93617021276596%;
 }
 
 .span5 {
-  width: 380px;
+  width: 40.42553191489362%;
 }
 
 .span4 {
-  width: 300px;
+  width: 31.91489361702128%;
 }
 
 .span3 {
-  width: 220px;
+  width: 23.40425531914894%;
 }
 
 .span2 {
-  width: 140px;
+  width: 14.8936170212766%;
 }
 
 .span1 {
@@ -3302,6 +3302,25 @@ button.close {
   margin-top: 4px;
 }
 
+.btn-sprlarge {
+  padding: 5% 10%;
+  font-size: 100%;
+  -webkit-border-radius: 12px;
+     -moz-border-radius: 12px;
+          border-radius: 12px;
+}
+
+.btn-sprlarge [class^="icon-"],
+.btn-sprlarge [class*=" icon-"] {
+  margin: 30px 10px;
+}
+
+#reg-login{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .btn-small {
   padding: 2px 10px;
   font-size: 11.9px;
@@ -3573,6 +3592,12 @@ input[type="submit"].btn.btn-large {
   *padding-bottom: 7px;
 }
 
+button.btn.btn-sprlarge,
+input[type="submit"].btn.btn-sprlarge {
+  *padding-top: 7px;
+  *padding-bottom: 7px;
+}
+
 button.btn.btn-small,
 input[type="submit"].btn.btn-small {
   *padding-top: 3px;
@@ -3674,6 +3699,10 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group > .btn-large {
+  font-size: 17.5px;
+}
+
+.btn-group > .btn-sprlarge {
   font-size: 17.5px;
 }
 

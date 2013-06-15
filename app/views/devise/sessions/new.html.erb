@@ -1,8 +1,8 @@
 
 <div class="row">
-	<div class="span4">
+	<div class="span4 expant">
 		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: {class: "well"}) do |f| %>
-
+		<div id="signin_field">
 			<fieldset>
 				<legend>Sign in:</legend>
 
@@ -14,7 +14,8 @@
 				<% end -%>
 				<div><%= f.button :submit, "Sign in" %></div>
 			</fieldset>
-		<% end %>
+			<% end %>
+		</div>
 
 		<%= render "devise/shared/links" %>
 	</div>

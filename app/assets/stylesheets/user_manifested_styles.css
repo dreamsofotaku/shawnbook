@@ -1,0 +1,106 @@
+.alert{
+	margin-top: 10px;
+}
+
+.reg-sys{
+	width: 20%;
+}
+
+.signup-reg-btn{
+	min-width:360px;
+	width: 75%;
+	float: left;
+}
+#shared-links{
+	margin: 5px auto;
+	clear: both;
+	width: 40%;
+}
+.container{
+	width: 49%;
+	margin: 10 auto;
+}
+#reg-btn{
+	width: 300px;
+	margin: 0px auto 10% auto;
+	float: left;
+}
+#lgn-btn{
+	width: 300px;
+	float: left;
+}
+#reg-login{
+	width: 60%;
+}
+#signin_field fieldset{
+	min-width: 265px;
+}
+.expant{
+	width: 50%;
+}
+
+	/*Smart phone*/
+@media screen and(max-width: 920px){
+	.container{
+		width: 70%;
+		margin: 10 auto;
+	}
+	.reg-sys{
+		width: 20%;
+	}
+	.signup-reg-btn{
+		min-width:40%;
+		width: 75%;
+		float: left;
+	}
+	#shared-links{
+		width: 40%;
+	}
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container {
+		width: 100%;
+	}
+	#reg-btn{
+		width: 300px;
+		margin: 0px auto 18% auto;
+		float: left;
+	}
+	#lgn-btn{
+		width: 300px;
+		float: left;
+	}
+	.expant{
+	width: 60%;
+	}
+
+@media screen and(max-width: 550px){
+	.btn-sprlarge {
+		padding: 5% 10%;
+		font-size: 12px;
+	}
+	.container{
+		width: 100%;
+		margin: 10 auto;
+	}
+	.reg-sys{
+		width: 100%;
+	}
+	.signup-reg-btn{
+		min-width:20%;
+		width: 30%;
+		float: left;
+		}
+	#shared-links{
+		width: 60%;
+	}
+	.navbar-static-top .container,
+	.navbar-fixed-top .container,
+	.navbar-fixed-bottom .container {
+		min-width: 295px;
+		width: 100%;
+	}
+	.expant{
+		width: 100%;
+	}
+}

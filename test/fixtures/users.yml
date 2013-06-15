@@ -17,6 +17,12 @@ mikethefrog:
   email: "mike@teamtreehouse.com"
   profile_name: "mikethefrog"
 
+bobbybrown:
+  first_name: "Bobby"
+  last_name: "Brown"
+  email: "bobbybrown@inner-dimensional.com"
+  profile_name: "bobbybrown"
+
 blocked_friend:
   first_name: 'Blocked'
   last_name: 'Friend'
